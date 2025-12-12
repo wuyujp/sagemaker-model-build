@@ -41,6 +41,7 @@ setuptools.setup(
     python_requires=">=3.6",
     install_requires=required_packages,
     extras_require=extras,
+    image_uri="public.ecr.aws/sagemaker/sagemaker-distribution:latest-cpu",
     entry_points={
         "console_scripts": [
             "get-pipeline-definition=pipelines.get_pipeline_definition:main",
