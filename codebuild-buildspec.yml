@@ -27,6 +27,7 @@ phases:
                 \"region\":\"${AWS_REGION}\", \
                 \"sagemaker_project_name\":\"${SAGEMAKER_PROJECT_NAME}\",\
                 \"sagemaker_project_id\":\"${SAGEMAKER_PROJECT_ID}\",\
-                \"bucket_name\":\"${ARTIFACT_BUCKET}\"\
+                \"bucket_name\":\"${ARTIFACT_BUCKET}\",\
+                \"image_uri\":\"public.ecr.aws/sagemaker/sagemaker-distribution:latest-cpu\"\
                     }"
       - echo "Create/update of the SageMaker Pipeline and a pipeline execution completed."
